@@ -11,6 +11,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
 `
 const P = styled.p`
   color: #8780808c;

@@ -35,6 +35,7 @@ const backgroundBar = (main) => {
 }
 
 const Container = styled.div`
+  width: 100%;
   color: #4db0d3;
   font-family: 'Krona One', sans-serif;
   text-align: center;
@@ -42,7 +43,12 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  @media screen and (min-width: 768px) {
+    width: 30%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 10%;
+  }
 `
 const H1 = styled.h1`
   font-size: 1rem;
@@ -74,7 +80,12 @@ const Bar = styled('div')(
   `
 )
 const Figure = styled.figure`
-  width: 100%;
+  width: 50%;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  }
 `
 const Image = styled.img`
   width: 100%;

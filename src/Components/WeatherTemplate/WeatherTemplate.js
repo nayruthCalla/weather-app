@@ -7,9 +7,17 @@ import Loading from '../Loading/Loading'
 
 const Content = styled.div`
   display: flex;
-  flex: 1;
-  justify-content: center;
+  flex-direction: column;
   gap: 2rem;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+  }
 `
 
 const WeatherTemplate = () => {
